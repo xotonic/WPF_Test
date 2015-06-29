@@ -1,0 +1,13 @@
+﻿<Window x:Class="Sharp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Mega Random Generator" Height="486.197" Width="519.369">
+    <StackPanel Orientation="Vertical">
+        <DataGrid  Name="dataGrid" Margin="25,65,25,0" VerticalAlignment="Top" Height="300" ColumnWidth="auto" IsReadOnly="True" />
+        <StackPanel Orientation="Horizontal" Margin="25" HorizontalAlignment="Center" >
+            <Button Content="Загрузить" Margin="20" Click="LoadClick"/>
+            <Button x:Name="SaveButton" Content="Сохранить" Margin="20" Click="SaveClick" IsEnabled="False"/>
+            <Button Content="Сгенерировать" Margin="20" Click="GenerateClick"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
